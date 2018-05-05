@@ -17,16 +17,7 @@ const httpOptions = {
 
 @Injectable()
 export class HeroService {
-    private heroesUrl = 'http://localhost:3000/api/heroes'; // URL to web api
-
-    /** 
-     * Esta é a forma correta. 
-     * Ele tem que usar o arquivo proxy.conf.js. Pesquise.
-     * Por hora, está funcionando inserindo o host completo. Como está acima.
-     *
-     * Vou pro centro.
-     */
-    //private heroesUrl = '/api/heroes'; // URL to web api
+    private heroesUrl = '/api/heroes'; // URL to web api
 
     constructor(
         private messageService: MessageService,
